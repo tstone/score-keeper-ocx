@@ -17,13 +17,13 @@ Table of Whatevers:
 5. More Stuff
 
 
-•Intro:
+â€¢Intro:
 ok, this is version 1.2 of scrambler score keeper.
 i fixed that smart mistake i made. (lol) it now can send scores that 
 works with any version of aol, and you can specify the "sendchat"
 method you want.
 
-•Basic Use:
+â€¢Basic Use:
 the use hasn't changed much. To add a name simply use this code:
 
 score1.addnameandscore "the name", 6
@@ -38,8 +38,10 @@ score1.addnameandscore Name, Score
 easy huh?
 
 
-•Events:
+â€¢Events:
 It responds to numerous events. here's a list of the one's i added:
+
+```visualbasic
 Event Click()
 	Responds when control is clicked
 Event DblClick()
@@ -58,8 +60,9 @@ Event MouseUp(Button As Integer, Shift As Integer, x As Single, Y As Single)
 	Responds when the mouse button is realesed
 Event SendScore(Score As String)
 	Responds when the sub SendScore is activated
+```
 
-•Other Stuff:
+â€¢Other Stuff:
 How to send the score. I forgot to add this in version 1.0 so here's how
 i fixed it:
 
@@ -69,14 +72,16 @@ Score1.SendScore
 then in the event SendScore put code like this:
 dim b as integer
 
+```visualbasic
 b%=b%+1
 if b% < 4 then
-sendchat "yourASCIIº°" & Score
+sendchat "yourASCIIÂºÂ°" & Score
 elseif b% = 4 then
 timeout 2.6
-sendchat "yourASCIIº°" & Score
+sendchat "yourASCIIÂºÂ°" & Score
 b% = 0
 end if
+```
 
 
 a little more complicated than adding a name but pretty easy.
@@ -95,7 +100,7 @@ how it's done, and i don't mind if you just copy and paste the code.
 
 
 
-•Other Stuff:
+â€¢Other Stuff:
 i'm going to be improving on this control and making the stupid properties 
 work ALL of the time. i'm sorry for any trouble or frustration i've caused 
 but you must realize something. i've realesed this as freeware and so it
@@ -114,4 +119,4 @@ ps i can't spel fur beens
 
 
  
-			a fruity monkey production © ® 1998
+			a fruity monkey production Â© Â® 1998
