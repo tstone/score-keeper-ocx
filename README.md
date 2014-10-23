@@ -17,20 +17,27 @@ Table of Whatevers:
 5. More Stuff
 
 
-•Intro:
+### Intro:
+
 ok, this is version 1.2 of scrambler score keeper.
 i fixed that smart mistake i made. (lol) it now can send scores that 
 works with any version of aol, and you can specify the "sendchat"
 method you want.
 
-•Basic Use:
+### Basic Use:
+
 the use hasn't changed much. To add a name simply use this code:
 
+```visualbasic
 score1.addnameandscore "the name", 6
+```
 
 i've noticed that my control acts funny sometimes when you use parenthesis
 like:
+
+```visualbasic
 score1.addnameandscore ("the name",6)
+```
 
 it's will give you an error. just remove the parenthesis. here's the syntax:
 score1.addnameandscore Name, Score
@@ -38,7 +45,8 @@ score1.addnameandscore Name, Score
 easy huh?
 
 
-•Events:
+### Events:
+
 It responds to numerous events. here's a list of the one's i added:
 
 ```visualbasic
@@ -62,17 +70,20 @@ Event SendScore(Score As String)
 	Responds when the sub SendScore is activated
 ```
 
-•Other Stuff:
+### Other Stuff:
 How to send the score. I forgot to add this in version 1.0 so here's how
 i fixed it:
 
 start by activating the sub SendScore:
-Score1.SendScore
-
-then in the event SendScore put code like this:
-dim b as integer
 
 ```visualbasic
+Score1.SendScore
+```
+
+then in the event SendScore put code like this:
+
+```visualbasic
+dim b as integer
 b%=b%+1
 if b% < 4 then
 sendchat "yourASCIIº°" & Score
@@ -100,7 +111,8 @@ how it's done, and i don't mind if you just copy and paste the code.
 
 
 
-•Other Stuff:
+### Other Stuff:
+
 i'm going to be improving on this control and making the stupid properties 
 work ALL of the time. i'm sorry for any trouble or frustration i've caused 
 but you must realize something. i've realesed this as freeware and so it
